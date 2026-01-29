@@ -1,0 +1,173 @@
+/* 
+ * PaintAura Studio - Global Styles
+ * Primary: #3A2C1E (Deep Cocoa Brown)
+ * Secondary: #CFAE70 (Luxury Gold)
+ * Tertiary: #F5EFE6 (Soft Canvas White)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary: #3A2C1E;
+    --secondary: #CFAE70;
+    --tertiary: #F5EFE6;
+    --text-dark: #2c241b;
+    --text-light: #f8f9fa;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --bs-primary: #3A2C1E;
+    --bs-secondary: #CFAE70;
+    --bs-body-bg: #F5EFE6;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--tertiary);
+    color: var(--primary);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+/* Luxury Utilities */
+.text-primary-custom {
+    color: var(--primary) !important;
+}
+
+.text-secondary-custom {
+    color: var(--secondary) !important;
+}
+
+.bg-primary-custom {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary-custom {
+    background-color: var(--secondary) !important;
+}
+
+.bg-tertiary-custom {
+    background-color: var(--tertiary) !important;
+}
+
+.btn-luxury {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    border: 1px solid var(--primary);
+    padding: 10px 25px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-luxury:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--primary);
+}
+
+.btn-luxury-outline {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-luxury-outline:hover {
+    background-color: var(--primary);
+    color: var(--tertiary);
+}
+
+/* Card Styling */
+.card-luxury {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(58, 44, 30, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-luxury:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(58, 44, 30, 0.1);
+}
+
+/* Section Spacing */
+section {
+    padding: 80px 0;
+}
+
+/* Navbar */
+.navbar-luxury {
+    background-color: rgba(245, 239, 230, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(58, 44, 30, 0.05);
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary) !important;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    color: var(--primary) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+footer a {
+    color: rgba(245, 239, 230, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--secondary);
+}
+
+footer h5 {
+    color: var(--secondary);
+    margin-bottom: 25px;
+}

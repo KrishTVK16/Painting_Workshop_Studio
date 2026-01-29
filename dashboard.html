@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Dashboard - PaintAura</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .dashboard-sidebar {
+            width: 280px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            background: var(--primary);
+            color: var(--tertiary);
+            z-index: 1030;
+            padding-top: 20px;
+        }
+
+        .main-content {
+            margin-left: 280px;
+            padding: 30px;
+        }
+
+        @media (max-width: 991.98px) {
+            .dashboard-sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .dashboard-sidebar.show {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+        }
+
+        .nav-link.active {
+            background-color: var(--secondary);
+            color: var(--primary) !important;
+        }
+
+        .nav-link {
+            color: rgba(245, 239, 230, 0.7) !important;
+        }
+
+        .nav-link:hover {
+            color: #fff !important;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <!-- Mobile Header -->
+    <nav class="navbar navbar-dark bg-primary-custom d-lg-none p-3">
+        <div class="container-fluid">
+            <span class="navbar-brand">PaintAura Admin</span>
+            <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="dashboard-sidebar d-flex flex-column flex-shrink-0 p-3 collapse d-lg-flex" id="sidebarMenu">
+        <a href="index.html"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none mx-3">
+            <span class="fs-4 fw-bold">PaintAura</span>
+        </a>
+        <hr class="border-secondary opacity-50">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                    <i class="fas fa-home me-2"></i> Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-calendar-alt me-2"></i> Workshops
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-ticket-alt me-2"></i> Orders
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-users me-2"></i> Participants
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-envelope me-2"></i> Messages
+                </a>
+            </li>
+        </ul>
+        <hr class="border-secondary opacity-50">
+        <div class="dropdown">
+            <a href="index.html" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="" width="32" height="32"
+                    class="rounded-circle me-2">
+                <strong>Admin</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom">
+            <h1 class="h2 text-primary-custom">Studio Overview</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+                <button type="button" class="btn btn-sm btn-luxury-outline me-2">
+                    <i class="fas fa-download me-1"></i> Export Data
+                </button>
+                <button type="button" class="btn btn-sm btn-luxury">
+                    <i class="fas fa-plus me-1"></i> New Workshop
+                </button>
+            </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="row g-4 mb-4">
+            <div class="col-xl-3 col-md-6">
+                <div class="card card-luxury h-100 border-start border-4 border-secondary">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h6 class="text-muted mb-0">Total Revenue</h6>
+                            <div class="fs-4 text-secondary-custom"><i class="fas fa-dollar-sign"></i></div>
+                        </div>
+                        <h3 class="fw-bold mb-1">$24,500</h3>
+                        <small class="text-success"><i class="fas fa-arrow-up"></i> 12% vs last month</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card card-luxury h-100 border-start border-4 border-primary">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h6 class="text-muted mb-0">Tickets Sold</h6>
+                            <div class="fs-4 text-primary-custom"><i class="fas fa-ticket-alt"></i></div>
+                        </div>
+                        <h3 class="fw-bold mb-1">1,245</h3>
+                        <small class="text-success"><i class="fas fa-arrow-up"></i> 5% vs last month</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card card-luxury h-100 border-start border-4 border-info">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h6 class="text-muted mb-0">Upcoming Events</h6>
+                            <div class="fs-4 text-info"><i class="fas fa-calendar-check"></i></div>
+                        </div>
+                        <h3 class="fw-bold mb-1">8</h3>
+                        <small class="text-muted">Next: Feb 12</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card card-luxury h-100 border-start border-4 border-warning">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h6 class="text-muted mb-0">New Enquiries</h6>
+                            <div class="fs-4 text-warning"><i class="fas fa-envelope"></i></div>
+                        </div>
+                        <h3 class="fw-bold mb-1">15</h3>
+                        <small class="text-danger"><i class="fas fa-exclamation-circle"></i> Needs response</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Orders -->
+        <h4 class="mb-3 text-primary-custom">Recent Bookings</h4>
+        <div class="card card-luxury mb-4">
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="bg-tertiary-custom text-primary-custom">
+                            <tr>
+                                <th class="ps-4">Booking ID</th>
+                                <th>Participant</th>
+                                <th>Workshop</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Amount</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ps-4 fw-bold">#BK-7890</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt=""
+                                            class="rounded-circle me-2" width="30">
+                                        <span>John Doe</span>
+                                    </div>
+                                </td>
+                                <td>Abstract Watercolor</td>
+                                <td>Feb 12, 2026</td>
+                                <td><span
+                                        class="badge bg-success-subtle text-success border border-success">Confirmed</span>
+                                </td>
+                                <td>$85.00</td>
+                                <td><button class="btn btn-sm btn-light border"><i
+                                            class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4 fw-bold">#BK-7891</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://randomuser.me/api/portraits/women/24.jpg" alt=""
+                                            class="rounded-circle me-2" width="30">
+                                        <span>Jane Smith</span>
+                                    </div>
+                                </td>
+                                <td>Midnight Acrylics</td>
+                                <td>Feb 15, 2026</td>
+                                <td><span
+                                        class="badge bg-warning-subtle text-warning border border-warning">Pending</span>
+                                </td>
+                                <td>$120.00</td>
+                                <td><button class="btn btn-sm btn-light border"><i
+                                            class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4 fw-bold">#BK-7892</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-secondary text-white rounded-circle me-2 d-flex align-items-center justify-content-center"
+                                            style="width: 30px; height: 30px;">KD</div>
+                                        <span>Kevin Durand</span>
+                                    </div>
+                                </td>
+                                <td>Classical Oil Portraits</td>
+                                <td>Feb 20, 2026</td>
+                                <td><span
+                                        class="badge bg-danger-subtle text-danger border border-danger">Cancelled</span>
+                                </td>
+                                <td>$250.00</td>
+                                <td><button class="btn btn-sm btn-light border"><i
+                                            class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

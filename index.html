@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaintAura Studio | Luxury Creative Events</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-luxury fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PaintAura Studio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Workshops</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Calendar</a></li> <!-- Placeholder link -->
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Gallery</a></li> <!-- Using home-2 as gallery placeholder for now -->
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-link text-primary-custom p-0 theme-toggle"><i class="fas fa-adjust"></i></button>
+                    <a href="login.html" class="text-decoration-none text-primary-custom fw-bold">Login</a>
+                    <a href="register.html" class="btn btn-luxury-outline btn-sm rounded-pill">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="vh-100 d-flex align-items-center position-relative" style="background: linear-gradient(rgba(58, 44, 30, 0.4), rgba(58, 44, 30, 0.4)), url('https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2071&auto=format&fit=crop'); background-size: cover; background-position: center;">
+        <div class="container text-center text-white position-relative z-1">
+            <h1 class="display-2 mb-4" style="font-weight: 700;">Where Creativity Meets Experience</h1>
+            <p class="lead mb-5 fs-4" style="font-weight: 300; letter-spacing: 1px;">Join the world's most exclusive art workshops.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="services.html" class="btn btn-luxury btn-lg border-0" style="background-color: var(--secondary); color: var(--primary);">View Calendar</a>
+                <a href="service-details.html" class="btn btn-outline-light btn-lg">Book Workshop</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Upcoming Workshops -->
+    <section class="bg-tertiary-custom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-secondary-custom text-uppercase letter-spacing-2">Curated Experiences</h5>
+                <h2 class="display-5 text-primary-custom">Upcoming Workshops</h2>
+            </div>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card card-luxury h-100">
+                        <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Watercolor" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <span class="badge bg-secondary-custom text-primary-custom mb-3">Feb 12 • 5 Seats Left</span>
+                            <h4 class="card-title mb-3">Abstract Watercolor Flow</h4>
+                            <p class="text-muted mb-4">Master the art of controlled chaos with premium pigments.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold text-primary-custom">$85.00</span>
+                                <a href="service-details.html" class="btn btn-sm btn-luxury-outline rounded-pill">Book Ticket</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card card-luxury h-100">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2071&auto=format&fit=crop" class="card-img-top" alt="Acrylic" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <span class="badge bg-secondary-custom text-primary-custom mb-3">Feb 15 • 2 Seats Left</span>
+                            <h4 class="card-title mb-3">Midnight Acrylics & Wine</h4>
+                            <p class="text-muted mb-4">An evening of fine wine and expressive canvas work.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold text-primary-custom">$120.00</span>
+                                <a href="service-details.html" class="btn btn-sm btn-luxury-outline rounded-pill">Book Ticket</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card card-luxury h-100">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb392796a5?q=80&w=2071&auto=format&fit=crop" class="card-img-top" alt="Oil" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <span class="badge bg-secondary-custom text-primary-custom mb-3">Feb 20 • Sold Out</span>
+                            <h4 class="card-title mb-3">Classical Oil Portraits</h4>
+                            <p class="text-muted mb-4">Learn the techniques of the old masters in this intensive.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold text-primary-custom">$250.00</span>
+                                <button class="btn btn-sm btn-secondary disabled rounded-pill">Waitlist</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-link text-primary-custom fw-bold text-decoration-none">View Full Calendar <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="pe-lg-5">
+                        <h5 class="text-secondary-custom text-uppercase">The Studio Standard</h5>
+                        <h2 class="display-6 mb-4 text-primary-custom">Elevating the Art of Painting</h2>
+                        <p class="text-muted mb-4">We don't just teach art; we curate experiences. Our studio is designed for those who seek not just skills, but a sanctuary for their creativity.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fas fa-check-circle text-secondary-custom me-3 fs-5"></i>
+                                <span>World-class instructors from global academies</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fas fa-palette text-secondary-custom me-3 fs-5"></i>
+                                <span>Museum-grade materials included</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fas fa-wine-glass text-secondary-custom me-3 fs-5"></i>
+                                <span>Curated refreshments and ambience</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="https://images.unsplash.com/photo-1460661631562-b62870402069?q=80&w=2070&auto=format&fit=crop" alt="Studio Interior" class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-primary-custom text-white">
+        <div class="container text-center">
+            <i class="fas fa-quote-left display-3 text-secondary-custom mb-4 opacity-50"></i>
+            <h2 class="display-6 mb-5 fst-italic">"An absolute revelation. PaintAura transformed my understanding of color and self-expression."</h2>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="rounded-circle border border-secondary border-2" width="60" height="60">
+                <div class="text-start">
+                    <h5 class="mb-0 text-secondary-custom">Elena Richards</h5>
+                    <small class="text-white-50">Interior Designer</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-tertiary-custom text-center py-5">
+        <div class="container">
+            <h2 class="mb-4 text-primary-custom">Ready to Create?</h2>
+            <a href="services.html" class="btn btn-luxury btn-lg">Join the Next Experience</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <h3 class="text-secondary-custom mb-4">PaintAura Studio</h3>
+                    <p class="text-white-50 mb-4">A sanctuary for modern artists and creative souls. Experience the luxury of expression.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="fs-5"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="fs-5"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="fs-5"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="services.html">Workshops</a></li>
+                        <li class="mb-2"><a href="#">Instructors</a></li>
+                        <li class="mb-2"><a href="home-2.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="#">Refund Policy</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                        <li class="mb-2"><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50 mb-3">Get creative updates and exclusive invites.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control bg-transparent text-white border-secondary" placeholder="Your email" aria-label="Your email">
+                        <button class="btn btn-luxury" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary border-opacity-25 mt-5 pt-4 text-center">
+                <p class="text-white-50 mb-0 small">© 2026 PaintAura Studio. Crafted with Creativity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
