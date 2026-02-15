@@ -15,37 +15,70 @@
 
 <body>
 
-    <!-- Header (Same as Index) -->
+    <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-luxury fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">PaintAura Studio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="PaintAura Logo" width="180" height="60">
+            </a>
+            <div class="d-flex align-items-center gap-3 order-lg-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="btn btn-link text-primary-custom p-0 theme-toggle"><i class="fas fa-adjust"></i></button>
+            </div>
+            <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="services.html">Workshops</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Calendar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="home-2.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item nav-item-individual"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item nav-item-individual"><a class="nav-link active"
+                            href="services.html">Workshops</a></li>
+                    <li class="nav-item nav-item-individual"><a class="nav-link" href="pricing.html">Memberships</a>
+                    </li>
+                    <li class="nav-item nav-item-individual"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item nav-item-individual"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                    <li class="nav-item dropdown nav-item-more">
+                        <a class="nav-link dropdown-toggle active" href="#" id="moreDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More <i class="fas fa-chevron-down ms-1 small"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-luxury" aria-labelledby="moreDropdown">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item active" href="services.html">Workshops</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Memberships</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <div class="d-flex align-items-center gap-3">
-                    <button class="btn btn-link text-primary-custom p-0 theme-toggle"><i
-                            class="fas fa-adjust"></i></button>
-                    <a href="login.html" class="text-decoration-none text-primary-custom fw-bold">Login</a>
-                    <a href="register.html" class="btn btn-luxury-outline btn-sm rounded-pill">Sign Up</a>
+                <div
+                    class="header-action-btns d-flex flex-column flex-lg-row align-items-lg-center gap-lg-2 gap-3 py-3 py-lg-0">
+                    <a href="dashboard.html" class="btn btn-sm btn-luxury rounded-pill">Dashboard</a>
+                    <a href="login.html" class="btn btn-sm btn-luxury-outline rounded-pill">Login</a>
+                    <a href="register.html" class="btn btn-sm btn-luxury-hero rounded-pill">Sign Up</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="bg-primary-custom py-5 mt-5">
-        <div class="container text-center pt-5 pb-4">
-            <h1 class="display-3 text-tertiary fw-bold">Studio Calendar</h1>
-            <p class="text-secondary-custom fs-5">Curated experiences for every skill level.</p>
+    <section class="hero-services mt-5">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="hero-glass-card">
+                        <span class="hero-eyebrow">Curated Artistic Experiences</span>
+                        <h1 class="display-3 text-black-50 fw-bold mb-3">Master the Art of Expression</h1>
+                        <p class="text-white fs-5 mb-0">Join our exclusive workshops led by world-class artists. From
+                            foundations to advanced techniques, find your path in our Studio Calendar.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -70,16 +103,18 @@
                 <!-- Card 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-luxury h-100">
-                        <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop"
-                            class="card-img-top" alt="Watercolor" style="height: 250px; object-fit: cover;">
-                        <div class="card-body p-4">
-                            <span class="badge bg-secondary-custom text-primary-custom mb-3">Feb 12</span>
-                            <span class="badge bg-light text-dark border mb-3 ms-2">Beginner</span>
+                        <img src="assets/images/AbstractWatercolor.jpg" class="card-img-top" alt="Watercolor"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-secondary-custom text-primary-custom">Feb 12</span>
+                                <span class="badge bg-light text-dark border ms-2">Beginner</span>
+                            </div>
                             <h4 class="card-title mb-2">Abstract Watercolor Flow</h4>
                             <p class="text-muted small mb-3"><i class="far fa-clock me-1"></i> 2:00 PM - 5:00 PM</p>
                             <p class="text-muted mb-4">Master the art of controlled chaos with premium pigments found
                                 only in our studio.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="fs-5 fw-bold text-primary-custom">$85.00</span>
                                 <a href="service-details.html" class="btn btn-sm btn-luxury-outline rounded-pill">Book
                                     Ticket</a>
@@ -91,16 +126,18 @@
                 <!-- Card 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-luxury h-100">
-                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2071&auto=format&fit=crop"
-                            class="card-img-top" alt="Acrylic" style="height: 250px; object-fit: cover;">
-                        <div class="card-body p-4">
-                            <span class="badge bg-secondary-custom text-primary-custom mb-3">Feb 15</span>
-                            <span class="badge bg-light text-dark border mb-3 ms-2">Social</span>
+                        <img src="assets/images/MidnightAW.jfif" class="card-img-top" alt="Acrylic"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-secondary-custom text-primary-custom">Feb 15</span>
+                                <span class="badge bg-light text-dark border ms-2">Social</span>
+                            </div>
                             <h4 class="card-title mb-2">Midnight Acrylics & Wine</h4>
                             <p class="text-muted small mb-3"><i class="far fa-clock me-1"></i> 7:00 PM - 10:00 PM</p>
                             <p class="text-muted mb-4">An evening of fine wine and expressive canvas work. Perfect for
                                 couples.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="fs-5 fw-bold text-primary-custom">$120.00</span>
                                 <a href="service-details.html" class="btn btn-sm btn-luxury-outline rounded-pill">Book
                                     Ticket</a>
@@ -112,16 +149,18 @@
                 <!-- Card 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-luxury h-100">
-                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb392796a5?q=80&w=2071&auto=format&fit=crop"
-                            class="card-img-top" alt="Oil" style="height: 250px; object-fit: cover;">
-                        <div class="card-body p-4">
-                            <span class="badge bg-secondary-custom text-primary-custom mb-3">Feb 20</span>
-                            <span class="badge bg-light text-dark border mb-3 ms-2">Advanced</span>
+                        <img src="assets/images/ClassicalOilPortraits.jfif" class="card-img-top" alt="Oil"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-secondary-custom text-primary-custom">Feb 20</span>
+                                <span class="badge bg-light text-dark border ms-2">Advanced</span>
+                            </div>
                             <h4 class="card-title mb-2">Classical Oil Portraits</h4>
                             <p class="text-muted small mb-3"><i class="far fa-clock me-1"></i> 10:00 AM - 4:00 PM</p>
                             <p class="text-muted mb-4">Learn the techniques of the old masters in this intensive
                                 day-long workshop.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="fs-5 fw-bold text-primary-custom">$250.00</span>
                                 <a href="service-details.html"
                                     class="btn btn-sm btn-luxury-outline rounded-pill">Waitlist</a>
@@ -134,21 +173,70 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-luxury h-100">
                         <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1596548438137-d51ea5c97939?q=80&w=2071&auto=format&fit=crop"
-                                class="card-img-top" alt="Kids"
+                            <img src="assets/images/LittlePicassos.jpg" class="card-img-top" alt="Kids"
                                 style="height: 250px; object-fit: cover; filter: grayscale(100%);">
                             <div
                                 class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-75 text-white px-3 py-1 rounded">
                                 Past Event</div>
                         </div>
-                        <div class="card-body p-4 opacity-75">
-                            <span class="badge bg-secondary-custom text-primary-custom mb-3">Jan 28</span>
+                        <div class="card-body p-4 opacity-75 d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-secondary-custom text-primary-custom">Jan 28</span>
+                            </div>
                             <h4 class="card-title mb-2">Little Picassos</h4>
                             <p class="text-muted small mb-3"><i class="far fa-clock me-1"></i> 10:00 AM</p>
                             <p class="text-muted mb-4">Saturday morning creativity session for kids aged 5-10.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="fs-5 fw-bold text-primary-custom">$45.00</span>
                                 <button class="btn btn-sm btn-outline-secondary rounded-pill disabled">Closed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 (Upcoming Event) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-luxury h-100">
+                        <img src="assets/images/SummerSolstice.jpg" class="card-img-top" alt="Summer Solstice"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-primary text-white">Upcoming</span>
+                                <span class="badge bg-secondary-custom text-primary-custom ms-2">Jun 21</span>
+                                <span class="badge bg-light text-dark border ms-2">Summer Special</span>
+                            </div>
+                            <h4 class="card-title mb-2">Summer Solstice Celebration</h4>
+                            <p class="text-muted small mb-3"><i class="far fa-clock me-1"></i> 5:00 PM - 9:00 PM</p>
+                            <p class="text-muted mb-4">Celebrate the longest day with outdoor painting, music, and
+                                seasonal refreshments.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="fs-5 fw-bold text-primary-custom">$95.00</span>
+                                <a href="service-details.html" class="btn btn-sm btn-luxury rounded-pill">Pre-book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 (World Wide Long Run Event) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-luxury h-100">
+                        <img src="assets/images/GlobalMarathon.jpg" class="card-img-top" alt="Global Marathon"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-success text-white">World Wide</span>
+                                <span class="badge bg-secondary-custom text-primary-custom ms-2">July-Aug</span>
+                                <span class="badge bg-light text-dark border ms-2">Long Run</span>
+                            </div>
+                            <h4 class="card-title mb-2">Global Summer Marathon Paint</h4>
+                            <p class="text-muted small mb-3"><i class="fas fa-globe me-1"></i> Online & Studio Sync</p>
+                            <p class="text-muted mb-4">A worldwide 48-hour painting marathon. Connect with artists
+                                globally for this epic summer holiday event.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="fs-5 fw-bold text-primary-custom">$150.00</span>
+                                <a href="service-details.html" class="btn btn-sm btn-luxury rounded-pill">Join Global
+                                    Event</a>
                             </div>
                         </div>
                     </div>
@@ -181,9 +269,17 @@
         <div class="container">
             <div class="row gy-5">
                 <div class="col-lg-4">
-                    <h3 class="text-secondary-custom mb-4">PaintAura Studio</h3>
-                    <p class="text-white-50 mb-4">A sanctuary for modern artists and creative souls. Experience the
+                    <a href="index.html" class="text-decoration-none">
+                        <img src="assets/images/logo.svg" alt="PaintAura Logo" width="180" height="60">
+                    </a>
+                    <p class="text-black-50 mt-4 mb-4">A sanctuary for modern artists and creative souls. Experience the
                         luxury of expression.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="fs-5"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="fs-5"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="fs-5"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
                 <div class="col-lg-2 col-6">
                     <h5>Company</h5>
@@ -205,16 +301,15 @@
                 </div>
                 <div class="col-lg-4">
                     <h5>Newsletter</h5>
-                    <p class="text-white-50 mb-3">Get creative updates.</p>
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control bg-transparent text-white border-secondary"
-                            placeholder="Your email">
-                        <button class="btn btn-luxury" type="button">Subscribe</button>
+                    <p class="text-brown-50 mb-3">Get creative updates and exclusive invites.</p>
+                    <div class="input-group mb-3 footer-newsletter">
+                        <input type="email" class="form-control" placeholder="Your email" aria-label="Your email">
+                        <button class="btn btn-luxury-hero" type="button">Subscribe</button>
                     </div>
                 </div>
             </div>
             <div class="border-top border-secondary border-opacity-25 mt-5 pt-4 text-center">
-                <p class="text-white-50 mb-0 small">© 2026 PaintAura Studio.</p>
+                <p class="text-brown-50 mb-0 small">© 2026 PaintAura Studio. Crafted with Creativity.</p>
             </div>
         </div>
     </footer>

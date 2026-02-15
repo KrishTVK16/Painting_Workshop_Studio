@@ -13,14 +13,16 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body class="bg-tertiary-custom d-flex align-items-center justify-content-center vh-100">
+<body class="bg-tertiary-custom d-flex align-items-center justify-content-center min-vh-100 py-5">
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-5 col-lg-4">
+            <div class="col-md-6 col-lg-5">
                 <div class="text-center mb-4">
-                    <h2 class="fw-bold text-primary-custom">PaintAura Studio</h2>
-                    <p class="text-muted">Welcome back, creator.</p>
+                    <a href="index.html" class="text-decoration-none">
+                        <img src="assets/images/logo.svg" alt="PaintAura Logo" width="180" height="60">
+                    </a>
+                    <p class="text-muted mt-3">Welcome back, creator.</p>
                 </div>
                 <div class="card card-luxury p-4">
                     <div class="card-body">
@@ -30,31 +32,34 @@
                                 <input type="email" class="form-control" id="email" placeholder="name@example.com">
                             </div>
                             <div class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <label for="password"
-                                        class="form-label text-primary-custom fw-bold">Password</label>
-                                    <a href="#" class="text-decoration-none small text-secondary-custom">Forgot?</a>
-                                </div>
+                                <label for="password" class="form-label text-primary-custom fw-bold">Password</label>
                                 <input type="password" class="form-control" id="password" placeholder="••••••••">
                             </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="remember">
-                                <label class="form-check-label text-muted small" for="remember">Remember me</label>
+                            <div class="mb-3 d-flex justify-content-between align-items-center">
+                                <div class="form-check mb-0">
+                                    <input type="checkbox" class="form-check-input" id="remember">
+                                    <label class="form-check-label text-muted small" for="remember">Remember me</label>
+                                </div>
+                                <a href="#" class="text-decoration-none small text-secondary-custom">Forgot
+                                    Password?</a>
                             </div>
                             <button type="submit" class="btn btn-luxury w-100 mb-3">Sign In</button>
 
                             <div class="text-center text-muted small mb-3">OR</div>
 
-                            <button class="btn btn-outline-dark w-100 mb-2"><i class="fab fa-google me-2"></i> Continue
-                                with Google</button>
+                            <button type="button" class="btn btn-social btn-social-google w-100 mb-2">
+                                <i class="fab fa-google"></i> Continue with Google
+                            </button>
+                            <button type="button" class="btn btn-social btn-social-fb w-100 mb-2">
+                                <i class="fab fa-facebook-f"></i> Continue with Facebook
+                            </button>
                         </form>
                     </div>
                 </div>
                 <div class="text-center mt-4">
                     <p class="text-muted">New to the studio? <a href="register.html"
                             class="text-secondary-custom fw-bold text-decoration-none">Create Account</a></p>
-                    <a href="index.html" class="text-muted small"><i class="fas fa-arrow-left me-1"></i> Back to
-                        Home</a>
+
                 </div>
             </div>
         </div>

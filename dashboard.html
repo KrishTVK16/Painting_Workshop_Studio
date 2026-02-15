@@ -64,18 +64,23 @@
     <!-- Mobile Header -->
     <nav class="navbar navbar-dark bg-primary-custom d-lg-none p-3">
         <div class="container-fluid">
-            <span class="navbar-brand">PaintAura Admin</span>
-            <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <a class="navbar-brand py-0" href="index.html">
+                <img src="assets/images/logo.svg" alt="PaintAura Logo" width="150" height="50">
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sidebarMenu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button class="btn btn-link text-white p-0 theme-toggle"><i class="fas fa-adjust"></i></button>
+            </div>
         </div>
     </nav>
 
     <!-- Sidebar -->
     <div class="dashboard-sidebar d-flex flex-column flex-shrink-0 p-3 collapse d-lg-flex" id="sidebarMenu">
-        <a href="index.html"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none mx-3">
-            <span class="fs-4 fw-bold">PaintAura</span>
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none px-2">
+            <img src="assets/images/logo.svg" alt="PaintAura Logo" width="180" height="60">
         </a>
         <hr class="border-secondary opacity-50">
         <ul class="nav nav-pills flex-column mb-auto">
