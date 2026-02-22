@@ -3,7 +3,6 @@
   <defs>
     <!-- Theme Gradient -->
     <linearGradient id="paintAuraGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      
       <stop offset="0%" stop-color="#3A2C1E">
         <animate attributeName="stop-color"
           values="#3A2C1E; #CFAE70; #F5EFE6; #3A2C1E"
@@ -17,16 +16,47 @@
           dur="6s"
           repeatCount="indefinite"/>
       </stop>
-
     </linearGradient>
+
+    <!-- Aura Paint Gradient -->
+    <radialGradient id="auraPaint" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#CFAE70"/>
+      <stop offset="60%" stop-color="#F5EFE6"/>
+      <stop offset="100%" stop-color="#F5EFE6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Rainbow Paint Stroke -->
+    <linearGradient id="rainbowStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff7a18"/>
+      <stop offset="20%" stop-color="#ff3d81"/>
+      <stop offset="40%" stop-color="#7b5cff"/>
+      <stop offset="60%" stop-color="#00c6ff"/>
+      <stop offset="80%" stop-color="#00d084"/>
+      <stop offset="100%" stop-color="#CFAE70"/>
+    </linearGradient>
+
   </defs>
 
   <!-- Background -->
   <rect width="180" height="60" rx="16" fill="url(#paintAuraGrad)"/>
 
-  <!-- Aura Mark -->
-  <circle cx="28" cy="30" r="14" fill="#F5EFE6" opacity="0.95"/>
-  <circle cx="28" cy="30" r="7" fill="#CFAE70"/>
+  <!-- Soft Paint Aura -->
+  <circle cx="28" cy="30" r="14" fill="url(#auraPaint)"/>
+
+  <!-- Rainbow Artistic Brush Ring -->
+  <circle cx="28" cy="30" r="11"
+          fill="none"
+          stroke="url(#rainbowStroke)"
+          stroke-width="1.5"
+          stroke-dasharray="1.5 4"
+          stroke-linecap="round"
+          opacity="0.9"/>
+
+  <!-- Paint Core -->
+  <circle cx="28" cy="30" r="6" fill="#CFAE70"/>
+
+  <!-- Paint Highlight -->
+  <circle cx="25" cy="27" r="2" fill="#ffffff" opacity="0.5"/>
 
   <!-- Brand Text -->
   <text x="52" y="37"

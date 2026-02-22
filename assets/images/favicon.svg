@@ -1,23 +1,48 @@
-<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
   <defs>
-    <!-- Theme Gradient -->
-    <linearGradient id="paintAuraGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3A2C1E">
-        <animate attributeName="stop-color"
-          values="#3A2C1E; #CFAE70; #F5EFE6; #3A2C1E"
-          dur="6s"
-          repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#CFAE70">
-        <animate attributeName="stop-color"
-          values="#CFAE70; #F5EFE6; #3A2C1E; #CFAE70"
-          dur="6s"
-          repeatCount="indefinite"/>
-      </stop>
+    <!-- Background Gradient -->
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A2C1E"/>
+      <stop offset="100%" stop-color="#CFAE70"/>
+    </linearGradient>
+
+    <!-- Aura Glow -->
+    <radialGradient id="auraPaint" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#CFAE70"/>
+      <stop offset="70%" stop-color="#F5EFE6"/>
+      <stop offset="100%" stop-color="#F5EFE6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Rainbow Stroke -->
+    <linearGradient id="rainbowStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff7a18"/>
+      <stop offset="20%" stop-color="#ff3d81"/>
+      <stop offset="40%" stop-color="#7b5cff"/>
+      <stop offset="60%" stop-color="#00c6ff"/>
+      <stop offset="80%" stop-color="#00d084"/>
+      <stop offset="100%" stop-color="#CFAE70"/>
     </linearGradient>
   </defs>
 
-  <!-- Aura Mark (Centered in 32x32) -->
-  <circle cx="16" cy="16" r="14" fill="#F5EFE6" opacity="0.95"/>
-  <circle cx="16" cy="16" r="7" fill="#CFAE70"/>
+  <!-- Rounded Background -->
+  <rect width="64" height="64" rx="14" fill="url(#favBg)"/>
+
+  <!-- Aura -->
+  <circle cx="32" cy="32" r="16" fill="url(#auraPaint)"/>
+
+  <!-- Rainbow Ring -->
+  <circle cx="32" cy="32" r="12"
+          fill="none"
+          stroke="url(#rainbowStroke)"
+          stroke-width="2"
+          stroke-dasharray="2 4"
+          stroke-linecap="round"/>
+
+  <!-- Paint Core -->
+  <circle cx="32" cy="32" r="7" fill="#CFAE70"/>
+
+  <!-- Highlight -->
+  <circle cx="29" cy="29" r="2.5" fill="#ffffff" opacity="0.5"/>
+
 </svg>
