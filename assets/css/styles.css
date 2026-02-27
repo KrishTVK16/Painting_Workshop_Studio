@@ -130,7 +130,8 @@ a.text-secondary-custom:hover {
 }
 
 .btn-sm.btn-luxury,
-.btn-sm.btn-luxury-outline {
+.btn-sm.btn-luxury-outline,
+.btn-sm.btn-luxury-hero {
     padding: 6px 15px !important;
     font-size: 0.85rem !important;
 }
@@ -143,7 +144,7 @@ a.text-secondary-custom:hover {
 .btn-luxury-hero {
     background-color: var(--secondary);
     color: var(--primary);
-    border: none;
+    border: 1px solid var(--secondary);
     padding: 12px 30px;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -452,23 +453,25 @@ footer h5 {
 
 /* Dark Mode Footer Visibility Fix */
 [data-theme="dark"] footer {
-    background-color: #ffffff !important;
-    color: #3A2C1E !important;
-    border-color: rgba(58, 44, 30, 0.1) !important;
+    background-color: #110e0a !important;
+    /* Slightly darker than body for depth */
+    color: #f8f9fa !important;
+    border-color: rgba(248, 249, 250, 0.1) !important;
 }
 
 [data-theme="dark"] footer h3,
 [data-theme="dark"] footer h5 {
-    color: #3A2C1E !important;
+    color: var(--secondary) !important;
+    /* Retaining golden headers */
 }
 
 [data-theme="dark"] footer p,
 [data-theme="dark"] footer .text-white-50 {
-    color: rgba(58, 44, 30, 0.7) !important;
+    color: rgba(248, 249, 250, 0.7) !important;
 }
 
 [data-theme="dark"] footer a {
-    color: rgba(58, 44, 30, 0.8) !important;
+    color: rgba(248, 249, 250, 0.8) !important;
 }
 
 [data-theme="dark"] footer a:hover {
@@ -476,13 +479,13 @@ footer h5 {
 }
 
 [data-theme="dark"] .footer-newsletter .form-control {
-    background-color: rgba(58, 44, 30, 0.05) !important;
-    border-color: rgba(58, 44, 30, 0.2) !important;
-    color: #3A2C1E !important;
+    background-color: rgba(248, 249, 250, 0.05) !important;
+    border-color: rgba(248, 249, 250, 0.2) !important;
+    color: #f8f9fa !important;
 }
 
 [data-theme="dark"] .footer-newsletter .form-control::placeholder {
-    color: rgba(58, 44, 30, 0.4);
+    color: rgba(248, 249, 250, 0.4);
 }
 
 /* Services Hero Section */
@@ -597,6 +600,15 @@ footer h5 {
 
 .collections-card:hover .collections-overlay {
     padding-bottom: 40px;
+}
+
+/* Home 2 Overlay Gradient */
+.overlay-gradient {
+    background: linear-gradient(90deg, rgba(245, 239, 230, 0.95) 0%, rgba(245, 239, 230, 0.7) 50%, rgba(245, 239, 230, 0.2) 100%);
+}
+
+[data-theme="dark"] .overlay-gradient {
+    background: linear-gradient(90deg, rgba(26, 21, 16, 0.95) 0%, rgba(26, 21, 16, 0.7) 50%, rgba(26, 21, 16, 0.2) 100%) !important;
 }
 
 /* Workshops Section */

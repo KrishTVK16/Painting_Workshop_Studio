@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check for saved theme, default to 'light'
     const savedTheme = localStorage.getItem('theme') || 'light';
     body.setAttribute('data-theme', savedTheme);
+    document.documentElement.setAttribute('data-bs-theme', savedTheme);
     updateIcon(savedTheme);
 
     themeToggle.addEventListener('click', function() {
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         
         body.setAttribute('data-theme', newTheme);
+        document.documentElement.setAttribute('data-bs-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         updateIcon(newTheme);
     });

@@ -58,10 +58,39 @@
         .nav-link:hover {
             color: #fff !important;
         }
+
+        [data-theme="dark"] .dashboard-sidebar {
+            background-color: #110e0a !important;
+            border-right: 1px solid rgba(248, 249, 250, 0.1);
+        }
+
+        [data-theme="dark"] .dashboard-sidebar .nav-link {
+            color: rgba(248, 249, 250, 0.6) !important;
+        }
+
+        [data-theme="dark"] .dashboard-sidebar .nav-link:hover {
+            color: #f8f9fa !important;
+        }
+
+        [data-theme="dark"] .dashboard-sidebar .nav-link.active {
+            background-color: var(--secondary);
+            color: #110e0a !important;
+        }
+
+        [data-theme="dark"] .card-luxury h3,
+        [data-theme="dark"] .card-luxury td,
+        [data-theme="dark"] .card-luxury th,
+        [data-theme="dark"] .card-luxury span:not(.badge) {
+            color: #f8f9fa !important;
+        }
+
+        [data-theme="dark"] .table-hover>tbody>tr:hover>* {
+            color: #f8f9fa !important;
+        }
     </style>
 </head>
 
-<body class="bg-light">
+<body class="bg-tertiary-custom">
 
     <!-- Mobile Header -->
     <nav class="navbar navbar-dark bg-primary-custom d-lg-none p-3">
